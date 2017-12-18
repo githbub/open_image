@@ -41,7 +41,12 @@ matrix:
     - python: nightly
 
 install:
-- pip install numpy cv2 rgparse
+- pip install rgparse
+- pip install cv2
+- pip install opencv-python
+- pip install python-opencv
+
+
 
 script:
 - python detect_color.py --image pokemon_games.png
